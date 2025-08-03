@@ -9,7 +9,7 @@ import { ButtonComponent } from '@components/button/button.component';
   templateUrl: './sign-in.component.html',
   imports: [InputComponent, ButtonComponent],
 })
-export class SignInComponent {
+export class SignInPageComponent {
   private authService: AuthService = inject(AuthService);
 
   public email: string = '';

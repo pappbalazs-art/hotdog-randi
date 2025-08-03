@@ -5,7 +5,7 @@ export const authRoutes: Routes = [
     path: 'sign-in',
     loadComponent: () =>
       import('./pages/sign-in/sign-in.component').then(
-        (m) => m.SignInComponent,
+        (m) => m.SignInPageComponent,
       ),
     title: 'Sign In',
   },
