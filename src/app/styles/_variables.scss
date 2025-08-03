@@ -40,3 +40,13 @@ $button-border-radius: 2rem;
 $button-flex-gap: 0.5rem;
 $button-transition-duration: $transition-duration;
 $button-transition-timing-function: $transition-timing-function;
+
+$navbar-background: $element-background;
+$navbar-height: 70px;
+$navbar-color: rgb(100, 100, 100);
+$navbar-box-shadow: 0 -5px 50px rgba(0, 0, 0, 0.08);
+$navbar-menu-flex-gap: 2.5rem;
+$navbar-menu-link-font-size: 0.8rem;
+$navbar-menu-link-flex-gap: 0.3rem;
+$navbar-menu-link-transition-duration: $transition-duration;
+$navbar-menu-link-transition-timing-function: ease-out;

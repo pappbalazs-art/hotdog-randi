@@ -8,7 +8,10 @@
 @use "layout/wrapper";
 @use "layout/containers";
 
+@use "components/section";
+@use "components/icon";
 @use "components/spinner";
 @use "components/card";
 @use "components/input";
 @use "components/button";
+@use "components/navbar";

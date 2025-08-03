@@ -1,0 +1,50 @@
+<div class="container">
+  <ul class="navbar__menu">
+    <li class="navbar__menu__link">
+      <a
+        class="navbar__menu__link"
+        routerLink="/"
+        routerLinkActive="active"
+        [routerLinkActiveOptions]="{ exact: true }"
+      >
+        <span class="icon icon--home" size="30"></span>
+      </a>
+    </li>
+    <li class="navbar__menu__item">
+      <a
+        class="navbar__menu__link"
+        routerLink="/followings"
+        routerLinkActive="active"
+      >
+        <span class="icon icon--heart" size="30"></span>
+      </a>
+    </li>
+    <li class="navbar__menu__item">
+      <a
+        class="navbar__menu__link"
+        routerLink="/create-rating"
+        routerLinkActive="active"
+      >
+        <span class="icon icon--plus" size="30"></span>
+      </a>
+    </li>
+    <li class="navbar__menu__item">
+      <a
+        class="navbar__menu__link"
+        routerLink="/notifications"
+        routerLinkActive="active"
+      >
+        <span class="icon icon--notifications" size="30"></span>
+      </a>
+    </li>
+    <li class="navbar__menu__item">
+      <a
+        class="navbar__menu__link"
+        routerLink="/profile"
+        routerLinkActive="active"
+      >
+        <span class="icon icon--profile" size="30"></span>
+      </a>
+    </li>
+  </ul>
+</div>

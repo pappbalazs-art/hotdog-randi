@@ -3,9 +3,11 @@ import { RouterOutlet } from '@angular/router';
 import { AuthService } from '@services/auth.service';
 import { NgIf } from '@angular/common';
 
+import { NavbarComponent } from '@components/navbar/navbar.component';
+
 @Component({
   selector: 'div.app__wrapper',
-  imports: [RouterOutlet, NgIf],
+  imports: [RouterOutlet, NgIf, NavbarComponent],
   templateUrl: './app.component.html',
 })
 export class AppComponent {

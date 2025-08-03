@@ -1,4 +1,6 @@
 <ng-container *ngIf="isReady()">
+  <nav class="navbar__wrapper" *ngIf="isAuthenticated()"></nav>
+
   <main class="page__wrapper">
     <router-outlet />
   </main>
