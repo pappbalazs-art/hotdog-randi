@@ -1,0 +1,16 @@
+.container {
+  width: 85vw;
+  max-width: 400px;
+
+  &--centered:has(> .spinner) {
+    display: flex;
+    justify-content: center;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+    margin-bottom: 1.5rem;
+  }
+}

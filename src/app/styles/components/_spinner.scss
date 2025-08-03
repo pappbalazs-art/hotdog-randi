@@ -1,0 +1,30 @@
+@use "variables" as *;
+
+.spinner {
+  display: block;
+  aspect-ratio: 1;
+  width: $spinner-size;
+  border-width: $spinner-border-width;
+  border-color: $primary-color;
+  border-style: solid;
+  border-radius: 50%;
+  animation:
+    spinner-1 $spinner-animation-duration infinite
+      $spinner-animation-timing-function alternate,
+    spinner-2 calc($spinner-animation-duration * 2) infinite
+      $spinner-animation-timing-function;
+
+  &[size="small"] {
+    width: $spinner-size-small;
+    border-width: $spinner-border-width-small;
+  }
+
+  &[size="large"] {
+    width: $spinner-size-large;
+    border-width: $spinner-border-width-large;
+  }
+
+  &[color="foreground"] {
+    border-color: $foreground;
+  }
+}

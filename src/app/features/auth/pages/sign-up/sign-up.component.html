@@ -1,0 +1,61 @@
+<div class="container container--centered">
+  <h1 class="container__title">Create Account</h1>
+
+  <form class="form" (submit)="signUp($event)">
+    <div
+      class="input"
+      type="text"
+      label="First Name"
+      placeholder="John"
+      [(value)]="firstname"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="text"
+      label="Last Name"
+      placeholder="Doe"
+      [(value)]="lastname"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="text"
+      label="Username"
+      placeholder="johndoe"
+      [(value)]="username"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="email"
+      label="E-mail Address"
+      placeholder="hello@example.com"
+      [(value)]="email"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="password"
+      label="Password"
+      placeholder="Password"
+      [(value)]="password"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="password"
+      label="Confirm Password"
+      placeholder="Confirm Password"
+      [(value)]="passwordConfirmation"
+      [isRequired]="true"
+    ></div>
+    <button
+      class="button"
+      [isDisabled]="!isFormValid()"
+      [isLoading]="isLoading()"
+    >
+      Create Account
+    </button>
+  </form>
+</div>

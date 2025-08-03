@@ -1,0 +1,29 @@
+<div class="container container--centered">
+  <h1 class="container__title">Sign In</h1>
+
+  <form class="form" (submit)="signIn($event)">
+    <div
+      class="input"
+      type="email"
+      label="Email Address"
+      placeholder="hello@example.com"
+      [(value)]="email"
+      [isRequired]="true"
+    ></div>
+    <div
+      class="input"
+      type="password"
+      label="Password"
+      placeholder="Password"
+      [(value)]="password"
+      [isRequired]="true"
+    ></div>
+    <button
+      class="button"
+      [isDisabled]="!isFormValid()"
+      [isLoading]="isLoading()"
+    >
+      Sign In
+    </button>
+  </form>
+</div>

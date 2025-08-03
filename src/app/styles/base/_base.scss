@@ -1,0 +1,21 @@
+@use "variables" as *;
+
+* {
+  padding: 0;
+  margin: 0;
+  border: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background: $background;
+}
+
+a {
+  color: var(--foreground);
+  text-decoration: none;
+}
+
+h1 {
+  margin: 0;
+}

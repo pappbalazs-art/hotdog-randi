@@ -1,0 +1,17 @@
+@use "variables" as *;
+
+.app__wrapper {
+  display: flex;
+  justify-content: center;
+  height: 100vh;
+
+  &:has(.container--centered) {
+    align-items: center;
+  }
+}
+
+.page__wrapper {
+  animation-name: fade-in;
+  animation-duration: $transition-duration;
+  animation-timing-function: $transition-timing-function;
+}

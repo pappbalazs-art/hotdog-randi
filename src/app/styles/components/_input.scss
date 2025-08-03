@@ -1,0 +1,39 @@
+@use "variables" as *;
+
+.input {
+  display: flex;
+  flex-direction: column;
+  gap: $input-flex-gap;
+
+  &:not(:last-child) {
+    margin-bottom: $input-margin-bottom;
+  }
+
+  &__field {
+    width: 100%;
+    height: $input-height;
+    padding: $input-padding-y $input-padding-x;
+    border-radius: $input-border-radius;
+    border: $input-border-width solid $input-border-color;
+    transition: border-color $input-transition-duration
+      $input-transition-timing-function;
+
+    &:-webkit-autofill {
+      &,
+      &:hover,
+      &:focus {
+        -webkit-text-fill-color: $foreground;
+        -webkit-box-shadow: 0 0 0 40rem $background inset;
+      }
+    }
+
+    &:focus {
+      outline: none;
+      border-color: $primary-color;
+    }
+  }
+
+  &__label {
+    font-size: $input-label-font-size;
+  }
+}

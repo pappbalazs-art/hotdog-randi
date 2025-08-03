@@ -1,1 +1,5 @@
-<router-outlet />
+<ng-container *ngIf="isReady()">
+  <main class="page__wrapper">
+    <router-outlet />
+  </main>
+</ng-container>

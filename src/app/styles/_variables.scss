@@ -1,0 +1,42 @@
+@use "sass:color";
+
+$background: rgb(247, 247, 247);
+$foreground: rgb(1, 1, 1);
+
+$primary-color: rgb(245, 165, 36);
+$primary-color-hover: color.adjust($primary-color, $lightness: -3%);
+$primary-color-disabled: color.adjust($primary-color, $lightness: 15%);
+
+$transition-duration: 0.2s;
+$transition-timing-function: ease-in-out;
+
+$element-background: rgb(255, 255, 255);
+
+$spinner-size: 1.5rem;
+$spinner-size-small: 1rem;
+$spinner-size-large: 2.5rem;
+$spinner-border-width: 4px;
+$spinner-border-width-small: 2px;
+$spinner-border-width-large: 5px;
+$spinner-animation-duration: 0.8s;
+$spinner-animation-timing-function: linear;
+
+$input-height: 50px;
+$input-padding-x: 1.35rem;
+$input-padding-y: 0;
+$input-border-radius: 2rem;
+$input-border-width: 2px;
+$input-border-color: rgb(220, 220, 220);
+$input-flex-gap: 0.35rem;
+$input-label-font-size: 0.8rem;
+$input-margin-bottom: 1rem;
+$input-transition-duration: $transition-duration;
+$input-transition-timing-function: $transition-timing-function;
+
+$button-height: $input-height;
+$button-padding-x: $input-padding-x;
+$button-padding-y: $input-padding-y;
+$button-border-radius: 2rem;
+$button-flex-gap: 0.5rem;
+$button-transition-duration: $transition-duration;
+$button-transition-timing-function: $transition-timing-function;

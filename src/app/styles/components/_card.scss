@@ -1,0 +1,23 @@
+@use "variables" as *;
+
+.card {
+  &__wrapper {
+    display: block;
+    width: 90vw;
+    padding: 25px;
+    border-radius: 25px;
+    background: $element-background;
+  }
+
+  &__container {
+    display: flex;
+    flex-direction: column;
+    gap: 25px;
+  }
+
+  &__title {
+    font-size: 2rem;
+    font-weight: 800;
+    line-height: 2rem;
+  }
+}

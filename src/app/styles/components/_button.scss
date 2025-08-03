@@ -1,0 +1,27 @@
+@use "variables" as *;
+
+.button {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: center;
+  gap: $button-flex-gap;
+  width: 100%;
+  height: $button-height;
+  padding: $button-padding-y $button-padding-x;
+  border-radius: $button-border-radius;
+  background: $primary-color;
+  color: $foreground;
+  cursor: pointer;
+  transition: background-color $button-transition-duration
+    $button-transition-timing-function;
+
+  &:not(:disabled):hover {
+    background: $primary-color-hover;
+  }
+
+  &:disabled {
+    cursor: text;
+    background: $primary-color-disabled;
+  }
+}
