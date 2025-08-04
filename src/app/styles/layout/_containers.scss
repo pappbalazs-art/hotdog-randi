@@ -1,11 +1,12 @@
-.container {
-  width: 85vw;
-  max-width: 400px;
+@use "variables" as *;
 
-  &--centered:has(> .spinner) {
-    display: flex;
-    justify-content: center;
-  }
+.container {
+  display: flex;
+  flex-direction: column;
+  gap: $container-flex-gap;
+  width: $container-width;
+  max-width: $container-max-width;
+  padding: $container-padding-y $container-padding-x;
 
   &__title {
     font-size: 2rem;

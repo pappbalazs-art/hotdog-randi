@@ -23,8 +23,4 @@
     width: $spinner-size-large;
     border-width: $spinner-border-width-large;
   }
-
-  &[color="foreground"] {
-    border-color: $foreground;
-  }
 }

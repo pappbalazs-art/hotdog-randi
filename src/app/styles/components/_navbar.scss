@@ -15,6 +15,11 @@
     animation-timing-function: $transition-timing-function;
   }
 
+  &__container {
+    width: $container-width;
+    max-width: $container-max-width;
+  }
+
   &__menu {
     display: flex;
     flex-direction: row;

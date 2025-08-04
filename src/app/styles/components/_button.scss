@@ -1,5 +1,31 @@
 @use "variables" as *;
 
+@mixin button-color(
+  $attrName,
+  $background,
+  $background-hover,
+  $background-disabled,
+  $foreground
+) {
+  &[color="#{$attrName}"] {
+    background: $background;
+    color: $foreground;
+
+    &:not(:disabled):hover {
+      background: $background-hover;
+    }
+
+    &:disabled {
+      background: $background-disabled;
+    }
+
+    .spinner,
+    .icon {
+      border-color: $foreground;
+    }
+  }
+}
+
 .button {
   display: flex;
   flex-direction: row;
@@ -24,4 +50,17 @@
     cursor: text;
     background: $primary-color-disabled;
   }
+
+  .spinner,
+  .icon {
+    border-color: $foreground;
+  }
+
+  @include button-color(
+    "danger",
+    $danger-color,
+    $danger-color-hover,
+    $danger-color-disabled,
+    $background
+  );
 }

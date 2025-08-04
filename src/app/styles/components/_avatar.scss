@@ -1,0 +1,25 @@
+@use "variables" as *;
+
+.avatar {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  width: $avatar-size;
+  height: $avatar-size;
+  border-radius: $avatar-border-radius;
+  background: $avatar-background;
+  font-size: $avatar-font-size;
+  font-weight: $avatar-font-weight;
+  -webkit-touch-callout: none;
+  -webkit-user-select: none;
+  -khtml-user-select: none;
+  -moz-user-select: none;
+  -ms-user-select: none;
+  user-select: none;
+
+  &[size="lg"] {
+    width: $avatar-size-large;
+    height: $avatar-size-large;
+    font-size: $avatar-font-size-large;
+  }
+}

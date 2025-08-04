@@ -6,11 +6,20 @@ $foreground: rgb(1, 1, 1);
 $primary-color: rgb(245, 165, 36);
 $primary-color-hover: color.adjust($primary-color, $lightness: -3%);
 $primary-color-disabled: color.adjust($primary-color, $lightness: 15%);
+$danger-color: rgb(243, 18, 96);
+$danger-color-hover: color.adjust($danger-color, $lightness: -3%);
+$danger-color-disabled: color.adjust($danger-color, $lightness: 15%);
 
-$transition-duration: 0.2s;
+$transition-duration: 0.3s;
 $transition-timing-function: ease-in-out;
 
 $element-background: rgb(255, 255, 255);
+
+$container-width: 85vw;
+$container-max-width: 400px;
+$container-padding-x: 0;
+$container-padding-y: calc((100vw - $container-width) / 2);
+$container-flex-gap: 1rem;
 
 $spinner-size: 1.5rem;
 $spinner-size-small: 1rem;
@@ -50,3 +59,15 @@ $navbar-menu-link-font-size: 0.8rem;
 $navbar-menu-link-flex-gap: 0.3rem;
 $navbar-menu-link-transition-duration: $transition-duration;
 $navbar-menu-link-transition-timing-function: ease-out;
+
+$avatar-size: 2.5rem;
+$avatar-size-large: 4rem;
+$avatar-font-size: 1rem;
+$avatar-font-size-large: 1.5rem;
+$avatar-font-weight: 400;
+$avatar-border-radius: 3rem;
+$avatar-background: rgb(215, 215, 215);
+
+$profile-card-flex-gap: 1rem;
+$profile-card-name-font-size: 1.75rem;
+$profile-card-name-font-weight: 600;

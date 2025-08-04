@@ -1,0 +1,13 @@
+@use "variables" as *;
+
+.profile__card {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  gap: $profile-card-flex-gap;
+
+  &__name {
+    font-size: $profile-card-name-font-size;
+    font-weight: $profile-card-name-font-weight;
+  }
+}

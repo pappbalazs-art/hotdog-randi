@@ -1,0 +1,19 @@
+<div class="container" *ngIf="currentUser()">
+  <header class="container__header">
+    <div class="profile__card">
+      <span class="avatar" size="lg">{{ currentUserName() | initials }}</span>
+      <h1 class="profile__card__name">{{ currentUserName() }}</h1>
+    </div>
+  </header>
+  <main class="container__body"></main>
+  <footer class="container__footer">
+    <button
+      class="button"
+      color="danger"
+      [isLoading]="isSignOutButtonLoading()"
+      (click)="signOut()"
+    >
+      Sign Out
+    </button>
+  </footer>
+</div>
